@@ -2,7 +2,7 @@
 name = "sap-upload-excel-creator"
 version = "0.1.0"
 description = "Automated creation of SAP upload format Excel file by aggregating source excel files.."
-authors = ["santokalayil <santokalayil@gmail.com>"]
+authors = ["asifpasha2743 <asif.pasha@razorpay.com>"]
 readme = "README.md"
 packages = [{include = "sap_upload_excel_creator"}]
 

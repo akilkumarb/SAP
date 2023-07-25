@@ -1,0 +1,70 @@
+{
+    "AHMEDABAD": {
+        "Region": "Ahmedabad",
+        "SPL Code": 104
+    },
+    "BANGALORE": {
+        "Region": "Bangalore",
+        "SPL Code": 71
+    },
+    "BHOPAL": {
+        "Region": "Bhopal",
+        "SPL Code": 111
+    },
+    "CHANDIGARH": {
+        "Region": "Chandigarh",
+        "SPL Code": 39
+    },
+    "CHENNAI": {
+        "Region": "Chennai",
+        "SPL Code": 80
+    },
+    "DELHI NCR": {
+        "Region": "Delhi NCR",
+        "SPL Code": 29
+    },
+    "HYDERABAD": {
+        "Region": "Hyderabad",
+        "SPL Code": 304
+    },
+    "JAIPUR": {
+        "Region": "Jaipur",
+        "SPL Code": 39
+    },
+    "KOCHI": {
+        "Region": "Kochi",
+        "SPL Code": 161
+    },
+    "KOLKATA": {
+        "Region": "Kolkata",
+        "SPL Code": 16
+    },
+    "LUCKNOW": {
+        "Region": "Lucknow",
+        "SPL Code": 28
+    },
+    "MUMBAI": {
+        "Region": "Mumbai",
+        "SPL Code": 325
+    },
+    "PUNE": {
+        "Region": "Pune",
+        "SPL Code": 118
+    },
+    "HARYANA": {
+        "Region": "Haryana",
+        "SPL Code": 39
+    },
+    "BHUWANESHWAR": {
+        "Region": "Bhuwaneshwar",
+        "SPL Code": 16
+    },
+    "GUWAHATI": {
+        "Region": "Guwahati",
+        "SPL Code": 552
+    },
+    "PATNA": {
+        "Region": "Patna",
+        "SPL Code": 553
+    }
+}

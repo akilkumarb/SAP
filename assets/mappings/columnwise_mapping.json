@@ -1,0 +1,229 @@
+{
+    "Recvd Date__DERIVE" : {
+        "KOTAK": "Recvd Date",
+        "AXIS": "Recvd Date",
+        "SBI": "Request Date",
+        "HDFC": "Rcvd Date at Ezetap",
+        "ICICI": "TID Received Date",
+        "IDFC": "TID Received Date",
+        "YBL": "TID Recevied Date",
+        "COMPLAINTS": "Received date"
+    },
+    "Device Name__DERIVE": {
+        "KOTAK": "Device Name",
+        "AXIS": "Device Name",
+        "SBI": "Model",
+        "HDFC": "Terminal Flag",
+        "IDFC": "Device Type",
+        "ICICI": "Device Type",
+        "YBL": "Device Type",
+        "COMPLAINTS": "Device Name"
+    },
+    "SC Entry": null,
+    "Service Ticket Number": {
+        "COMPLAINTS": "Ticket no"
+    },
+    "Transaction Type": "A",
+    "SPL Code": "NEEDED_EXTRA_PROCESSING",
+    "Reporting Type": {
+        "KOTAK": "Segment",
+        "AXIS": "Segment",
+        "SBI": "Segment",
+        "HDFC": "Segment",
+        "ICICI": "Segment",
+        "IDFC": "Segment",
+        "YBL": "Segment",
+        "COMPLAINTS": "Segment"
+    },
+    "Priority": "M",
+    "Acquirer": "NEEDED EXTRA PROCESSING",
+    "Ticket Type": "NEEDED_EXTRA_PROCESSING",
+    "Call Type": "NEEDED_EXTRA_PROCESSING",
+    "Subject": "NEEDED_EXTRA_PROCESSING",
+    "Sub Type": {
+        "KOTAK": "Normal/Bizz connect",
+        "AXIS": "Normal,Kdp/Snapbiz",
+        "HDFC": "TID Type",
+        "COMPLAINTS": "Ticket Discription"
+    },
+    "BP Code": "NEEDED_EXTRA_PROCESSING",
+    "Customer": "NEEDED_EXTRA_PROCESSING",
+    "Contact Person": {
+        "KOTAK": "Name",
+        "AXIS": "Name",
+        "SBI": "Contactname",
+        "HDFC": "Contact Person",
+        "ICICI": "CONTACT PERSON NAME",
+        "IDFC": "Contact Person Name",
+        "YBL": "CONTACTPERSON",
+        "COMPLAINTS": "Contact Person"
+    },
+    "Merchant Name": {
+        "KOTAK": "Merchant Name",
+        "AXIS": "Merchant Name",
+        "SBI": "Merchant Nabe",
+        "HDFC": "Legal Name",
+        "ICICI": "MERCHANT NAME (LEGAL)",
+        "IDFC": "MERCHANT NAME (LEGAL)",
+        "YBL": "MERCHANTLEGALNAME",
+        "COMPLAINTS": "Merchant Name"
+    },
+    "DBA Name": {
+        "KOTAK": "Merchant DBA Name",
+        "AXIS": "Merchant DBA Name",
+        "SBI": "Merchant Nabe",
+        "HDFC": "DBA Name",
+        "ICICI": "MERCHANT NAME (DBA)",
+        "IDFC": "Merchant DBA Name",
+        "YBL": "MERCHANTDBANAME",
+        "COMPLAINTS": "Merchant Name"
+    },
+    "Address": {
+        "KOTAK": "Address",
+        "AXIS": "Address",
+        "SBI": "Contactaddress",
+        "HDFC": "Address",
+        "ICICI": "INSTALLATION ADDRESS",
+        "IDFC": "Address",
+        "YBL": "ADDRESS",
+        "COMPLAINTS": "Address Line"
+    },
+    "City": {
+        "KOTAK": "City",
+        "AXIS": "City",
+        "SBI": "City",
+        "HDFC": "City",
+        "ICICI": "City",
+        "IDFC": "City",
+        "YBL": "CITY",
+        "COMPLAINTS": "City"
+    },
+    "Location": {
+        "KOTAK": "Location",
+        "AXIS": "City",
+        "SBI": "Location",
+        "HDFC": "City",
+        "ICICI": "City",
+        "IDFC": "City",
+        "YBL": "CITY",
+        "COMPLAINTS": "Location"
+    },
+    "Pincode": {
+        "KOTAK": "Pincode",
+        "AXIS": "Pincode",
+        "SBI": "ContactZip",
+        "HDFC": "Pin",
+        "ICICI": "PIN Code",
+        "IDFC": "Pincode",
+        "YBL": "PINCODE",
+        "COMPLAINTS": "Pin Code"
+    },
+    "State": {
+        "KOTAK": "State",
+        "AXIS": "State",
+        "SBI": "State",
+        "HDFC": "Region",
+        "ICICI": "State",
+        "IDFC": "State",
+        "YBL": "STATE",
+        "COMPLAINTS": "State"
+    },
+    "Zone": {
+        "KOTAK": "New Team",
+        "AXIS": "New Team",
+        "SBI": "Team",
+        "HDFC": "Team_2",
+        "ICICI": "Zone",
+        "IDFC": "Zone",
+        "YBL": "New Team",
+        "COMPLAINTS": "Team"
+    },
+    "Region": {
+        "KOTAK": "Region",
+        "AXIS": "Zone",
+        "SBI": "Team",
+        "HDFC": "Team_2",
+        "ICICI": "Team",
+        "IDFC": "Zone",
+        "YBL": "New Team",
+        "COMPLAINTS": "Region"
+    },
+    "Phone No": {
+        "KOTAK": "Login",
+        "AXIS": "Login",
+        "SBI": "Mobile number",
+        "HDFC": "Login ID",
+        "ICICI": "Login ID",
+        "IDFC": "Login",
+        "YBL": "Login Id",
+        "COMPLAINTS": "Contact Number"
+    },
+    "Merchant Phone No": {
+        "KOTAK": "Login",
+        "AXIS": "Login",
+        "SBI": "Mobile number",
+        "HDFC": "Login ID",
+        "ICICI": "Login ID",
+        "IDFC": "Login",
+        "YBL": "Login Id",
+        "COMPLAINTS": "Contact Number"
+    },
+    "User ID": {
+        "KOTAK": "Login",
+        "AXIS": "Login",
+        "SBI": "Mobile number",
+        "HDFC": "Login ID",
+        "ICICI": "Login ID",
+        "IDFC": "Login",
+        "YBL": "Login Id",
+        "COMPLAINTS": "Contact Number"
+    },
+    "MID": {
+        "KOTAK": "MID",
+        "AXIS": "MID",
+        "SBI": "MID",
+        "HDFC": "MID",
+        "ICICI": "MID",
+        "IDFC": "MID",
+        "YBL": "MID",
+        "COMPLAINTS": "MID"
+    },
+    "TID": {
+        "KOTAK": "TID",
+        "AXIS": "TID",
+        "SBI": "TID",
+        "HDFC": "TID",
+        "ICICI": "TID",
+        "IDFC": "TID",
+        "YBL": "TID",
+        "COMPLAINTS": "TID"
+    },
+    "Old Device Serial": {
+        "KOTAK": "Serial Number",
+        "AXIS": "Serial Number",
+        "SBI": "DSN",
+        "HDFC": "Device SN",
+        "ICICI": "Device Number",
+        "IDFC": "Device Number",
+        "YBL": "Serial #",
+        "COMPLAINTS": "Device Number"
+    },
+    "New Serial Number": {
+        "COMPLAINTS": "New Device Number"
+    },
+    "Item Code": "NEEDED_EXTRA_PROCESSING",
+    "Item Name": "NEEDED_EXTRA_PROCESSING",
+    "Item Description": "NEEDED_EXTRA_PROCESSING",
+    "Status": "NEEDED_EXTRA_PROCESSING",
+    "Closure Remarks": {},
+    "POA": {},
+    "No Of Visits": 0,
+    "SIM Provider": {},
+    "SIM No": {},
+    "SIM No Old": {},
+    "POA Date": "NEEDED_EXTRA_PROCESSING",
+    "Store id": {
+        "KOTAK": "Store id",
+        "AXIS": "Store id"
+    }
+}

@@ -1,0 +1,350 @@
+{
+    "EZ ANDROID A910": {
+        "AXIS": {
+            "Item No.": "A910 - AXIS",
+            "Item Description": "A910 - AXIS A910-0AW-RD5-01EH - AXIS"
+        }
+    },
+    "EZ ANDROID A910+QR": {
+        "AXIS": {
+            "Item No.": "APP Loading _A910 AXIS",
+            "Item Description": "Signcatch APP LOADING"
+        }
+    },
+    "EZ ANDROID A910 + QR": {
+        "AXIS": {
+            "Item No.": "APP Loading _A910 AXIS",
+            "Item Description": "Signcatch APP LOADING"
+        }
+    },
+    "TPS 900": {
+        "Mobiocean": {
+            "Item No.": "TPS 900-  MOBIOCEAN_KI",
+            "Item Description": "Telpo TPS 900 Device KI"
+        }
+    },
+    "D200": {
+        "AXIS": {
+            "Item No.": "D200 FLY - AXIS",
+            "Item Description": "SOLO P ( D200 NFC) _ AXIS"
+        },
+        "ICICI": {
+            "Item No.": "D200 FLY - FDC",
+            "Item Description": "SOLO P ( D200 NFC) - FDC"
+        },
+        "HDFC": {
+            "Item No.": "D200 FLY - HDFC Non-INT",
+            "Item Description": "SOLO P ( D200 NFC)_HDFC Non- Integrated"
+        },
+        "MASHREQ": {
+            "Item No.": "D200 FLY - MASHREQ",
+            "Item Description": "SOLO P ( D200 NFC) _ Mashreq Bank"
+        },
+        "Others": {
+            "Item No.": "D200 FLY - RA",
+            "Item Description": "SOLO P ( D200 NFC) _ RENT ASSET"
+        }
+    },
+    "MOBIOCEAN - TPS900": {
+        "AXIS": {
+            "Item No.": "TPS 900 - AXIS",
+            "Item Description": "TPS 900 AXIS"
+        }
+    },
+    "A50": {
+        "EZETAP": {
+            "Item No.": "A50 -- EZETAP",
+            "Item Description": "A50 (Specs_NFC+ 4G+WiFi+BT+Dual SIM)"
+        },
+        "HDFC": {
+            "Item No.": "A50 \u2013 HDFC Non - Inter",
+            "Item Description": "A50 (Specs_NFC+ 4G+WiFi+BT+Dual SIM)"
+        }
+    },
+    "V2.1 H": {
+        "EZETAP": {
+            "Item No.": "V2.1 H - EZETAP",
+            "Item Description": "Ezetap Duo(V2.1 MPOS HDFC Devices) - EZETAP"
+        }
+    },
+    "Apos910": {
+        "ICICI": {
+            "Item No.": "A910 - FDC",
+            "Item Description": "A910 (Specs_NFC+ 4G+WiFi+BT+Dual SIM) ICICI"
+        },
+        "IDFC": {
+            "Item No.": "A910 - IDFC",
+            "Item Description": "A910-0AW-RD5-01EH - IDFC"
+        }
+    },
+    "Apos9102GB": {
+        "ICICI": {
+            "Item No.": "A910 - FDC",
+            "Item Description": "A910 (Specs_NFC+ 4G+WiFi+BT+Dual SIM) ICICI"
+        },
+        "IDFC": {
+            "Item No.": "A910 - IDFC",
+            "Item Description": "A910-0AW-RD5-01EH - IDFC"
+        }
+    },
+    "D190": {
+        "EZETAP": {
+            "Item No.": "D190 - EZETAP",
+            "Item Description": "GPRS DEVICE"
+        }
+    },
+    "A77": {
+        "EZETAP": {
+            "Item No.": "A77 - EZETAP",
+            "Item Description": "A77"
+        }
+    },
+    "Apos920": {
+        "ICICI": {
+            "Item No.": "A920 - FDC",
+            "Item Description": "A920 Android POS(NFC+4G+WiFi+BT+Dual camera) - FDC"
+        }
+    },
+    "K300": {
+        "EZETAP": {
+            "Item No.": "K300 - EZETAP_NEXGO",
+            "Item Description": "Mini POS with 3G, NFC, WIFI, withbiometrics and scanner WITH power supply"
+        }
+    },
+    "Q181": {
+        "Others": {
+            "Item No.": "Q181 - Sound Box",
+            "Item Description": "Q181 - Sound Box  Mantra Tech"
+        }
+    },
+    "V2.1 C": {
+        "EZETAP": {
+            "Item No.": "V2.1 C - EZETAP",
+            "Item Description": "Ezetap Duo(V2.1 MPOS CITI Devices)"
+        }
+    },
+    "D200 FLY": {
+        "EZETAP": {
+            "Item No.": "D200 FLY - EZETAP",
+            "Item Description": "SOLO P ( D200 NFC) _ EZETAP"
+        }
+    },
+    "A910": {
+        "EZETAP": {
+            "Item No.": "A910 - EZETAP",
+            "Item Description": "A910 (Specs_NFC+ 4G+WiFi+BT+Dual SIM)"
+        },
+        "HDFC": {
+            "Item No.": "A910 \u2013 HDFC Non - Inter",
+            "Item Description": "A910 (Specs_NFC+ 4G+WiFi+BT+Dual SIM)"
+        },
+        "AXIS": {
+            "Item No.": "A910 - AXIS",
+            "Item Description": "A910 - AXIS A910-0AW-RD5-01EH - AXIS"
+        }
+    },
+    "ST380": {
+        "Others": {
+            "Item No.": "ET380 - Sound Box",
+            "Item Description": "ET380 sound Box POS Terminal"
+        }
+    },
+    "A920 NON-INTEGRATED WITH SIM & A920": {
+        "AXIS": {
+            "Item No.": "A920 - AXIS",
+            "Item Description": "A920 Android POS(NFC+4G+WiFi+BT+Dual camera) - AXIS"
+        }
+    },
+    "V2.1": {
+        "Others": {
+            "Item No.": "V2.1 H - EZ",
+            "Item Description": "Ezetap Duo(V2.1 MPOS HDFC Devices) - EZETAP"
+        },
+        "HDFC": {
+            "Item No.": "V2.1 HDFC",
+            "Item Description": "Ezetap Duo(V2.1 MPOS HDFC Devices) - HDFC"
+        }
+    },
+    "S 90": {
+        "EZETAP": {
+            "Item No.": "S 90 - EZETAP",
+            "Item Description": "S90 Mobile Payment Terminal"
+        }
+    },
+    "X990": {
+        "IDFC": {
+            "Item No.": "X990 - IDFC",
+            "Item Description": "X990 INA,4G/BT/WIFI,2MP FRONT/REAR CAMERA"
+        },
+        "Others": {
+            "Item No.": "X990 - Verifone",
+            "Item Description": "x990 Dual Wifi"
+        }
+    },
+    "D180": {
+        "KOTAK": {
+            "Item No.": "D180S - KOTAK",
+            "Item Description": "D180 NFC MPOS_KOTAK"
+        },
+        "EZETAP": {
+            "Item No.": "D180S - EZTAP",
+            "Item Description": "D180 NFC MPOS_EZETAP"
+        },
+        "AXIS": {
+            "Item No.": "D180C - AXIS",
+            "Item Description": "mPOS Terminaal"
+        },
+        "HDFC": {
+            "Item No.": "D180S - HDFC INT",
+            "Item Description": "D180 NFC MPOS _ HDFC  Integrated"
+        },
+        "ICICI": {
+            "Item No.": "D180S - FDC",
+            "Item Description": "D180 NFC MPOS _ FDC"
+        },
+        "Others": {
+            "Item No.": "D180S - RA",
+            "Item Description": "D180 NFC MPOS _ RENT ASSET"
+        }
+    },
+    "D180 INTEGRATED": {
+        "AXIS": {
+            "Item No.": "D180C - AXIS",
+            "Item Description": "mPOS Terminaal"
+        }
+    },
+    "EZ ANDROID A80": {
+        "AXIS": {
+            "Item No.": "A80 - AXIS",
+            "Item Description": "Android POS (Without Cradle Pinter less Android)"
+        }
+    },
+    "EZ ANDROID A80 + QR": {
+        "AXIS": {
+            "Item No.": "A80 - AXIS",
+            "Item Description": "Android POS (Without Cradle Pinter less Android)"
+        }
+    },
+    "EZ ANDROID A80+QR": {
+        "AXIS": {
+            "Item No.": "A80 - AXIS",
+            "Item Description": "Android POS (Without Cradle Pinter less Android)"
+        }
+    },
+    "D175": {
+        "EZETAP": {
+            "Item No.": "D175 - EZETAP",
+            "Item Description": "D175 DEVICE"
+        }
+    },
+    "N3": {
+        "EZETAP": {
+            "Item No.": "N3 - EZETAP_NEXGO",
+            "Item Description": "Android POS terminal, with 4G,WIFI,NFC, BLUETOOTH With power supply"
+        }
+    },
+    "Ezetap-D180": {
+        "KOTAK": {
+            "Item No.": "D180S - KOTAK",
+            "Item Description": "D180 NFC MPOS_KOTAK"
+        }
+    },
+    "S90": {
+        "EZETAP": {
+            "Item No.": "S90 - EZETAP",
+            "Item Description": "S 90 DEVICE_Master terminal"
+        }
+    },
+    "Q190": {
+        "EZETAP": {
+            "Item No.": "Q190 - EZETAP",
+            "Item Description": "dynamic QR code device with Screen"
+        }
+    },
+    "DX8000": {
+        "SBI": {
+            "Item No.": "DX8000 - SBI",
+            "Item Description": "DX8000 -SBI ingenico"
+        }
+    },
+    "CR100": {
+        "Others": {
+            "Item No.": "CR100",
+            "Item Description": "CR100_DSPREAD"
+        },
+        "AXIS": {
+            "Item No.": "CR100 - AXIS",
+            "Item Description": "CR100 Pin on Glass AXIS BANK"
+        }
+    },
+    "D180 NON-INTEGRATED": {
+        "AXIS": {
+            "Item No.": "D180S - AXIS",
+            "Item Description": "D180S - AXIS"
+        }
+    },
+    "D210": {
+        "Others": {
+            "Item No.": "D210 - PAX",
+            "Item Description": "D210 Wireless POS Terminal"
+        }
+    },
+    "PAX A910": {
+        "KOTAK": {
+            "Item No.": "A910 - KOTAK",
+            "Item Description": "A910 - A910-0AW-RD5-01EH - Kotak"
+        }
+    },
+    "A920": {
+        "AXIS": {
+            "Item No.": "A920 - AXIS",
+            "Item Description": "A920 Android POS(NFC+4G+WiFi+BT+Dual camera) - AXIS"
+        },
+        "EZETAP": {
+            "Item No.": "A920 PRO - EZETAP",
+            "Item Description": "A920 PRO (2GB RAM + 16GB RAM + Dual Sim)"
+        },
+        "Others": {
+            "Item No.": "A920 - GCTP",
+            "Item Description": "A920 Android POS(NFC+4G+WiFi+BT+Dual camera) - GCTP"
+        },
+        "HDFC": {
+            "Item No.": "A920 PRO - HDFC Inter",
+            "Item Description": "A920 PRO (2GB RAM + 16GB RAM + Dual Sim) HDFC Integrated 10Ver"
+        },
+        "YBL": {
+            "Item No.": "A920 - YBL",
+            "Item Description": "A920 Android POS(NFC+4G+WiFi+BT+Dual camera) - YBL"
+        }
+    },
+    "CS25": {
+        "EZETAP": {
+            "Item No.": "CS35-Ezetap",
+            "Item Description": "Static QR Soundbox_CS35 PAX"
+        }
+    },
+    "XG230": {
+        "Others": {
+            "Item No.": "XG230 Second Box",
+            "Item Description": "XG230 Second Box (Enhanced to Enhanced Plus Support"
+        }
+    },
+    "A80": {
+        "MANTRA": {
+            "Item No.": "A80 - MANTRA",
+            "Item Description": "Android POS (Without Cradle Pinterless Android)"
+        }
+    },
+    "ET389": {
+        "EZETAP": {
+            "Item No.": "ET389 - EZETAP",
+            "Item Description": "ET389 Dynamic QR Code with Display,4G Wifi - SoundBox Payment Terminal"
+        }
+    },
+    "CS60": {
+        "EZETAP": {
+            "Item No.": "CS60 - Ezetap",
+            "Item Description": "PAX QR Device"
+        }
+    }
+}

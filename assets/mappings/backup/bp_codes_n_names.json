@@ -1,0 +1,54 @@
+{
+    "AMEX": {
+        "BP Code": "CUS00002",
+        "BP Name": "American Express Banking Corp"
+    },
+    "AXIS": {
+        "BP Code": "CUS00004",
+        "BP Name": "Axis Bank Ltd"
+    },
+    "CITI": {
+        "BP Code": "CUS00015",
+        "BP Name": "CITI Bank N.A"
+    },
+    "HDFC": {
+        "BP Code": "CUS00023",
+        "BP Name": "HDFC Bank Limited"
+    },
+    "ICICI": {
+        "BP Code": "CUS00026",
+        "BP Name": "ICICI Merchant Services Private Limited"
+    },
+    "IDFI": {
+        "BP Code": "CUS00028",
+        "BP Name": "IDFC First Bank Limited"
+    },
+    "KOTAK": {
+        "BP Code": "CUS00048",
+        "BP Name": "Kotak Mahindra Bank Limited"
+    },
+    "SBI": {
+        "BP Code": "CUS00055",
+        "BP Name": "State Bank of India"
+    },
+    "YBL": {
+        "BP Code": "CUS00066",
+        "BP Name": "Yes Bank Limited"
+    },
+    "EZETAP": {
+        "BP Code": "CUS00075",
+        "BP Name": "Ezetap Mobile Solutions"
+    },
+    "IDBI": {
+        "BP Code": "CUS00090",
+        "BP Name": "IDBI BANK"
+    },
+    "INDUSIND": {
+        "BP Code": "CUS00091",
+        "BP Name": "Indusind Bank"
+    },
+    "RBL": {
+        "BP Code": "CUS00101",
+        "BP Name": "Ratnakar Bank Ltd"
+    }
+}

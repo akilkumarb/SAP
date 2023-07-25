@@ -1,0 +1,12 @@
+
+Enhancement or new application
+
+
+# EORR FOUND
+# File "/home/ezetap/.cache/pypoetry/virtualenvs/sap-upload-excel-creator-LhCT5_OE-py3.8/lib/python3.8/site-packages/pandas/core/apply.py", line 889, in apply_series_generator
+#     results[i] = self.f(v)
+# File "/home/ezetap/Documents/work/repos/SAP_upload_excel_creator/sap_upload_excel_creator/core/functions.py", line 368, in <lambda>
+#     lambda input_row: do_mapping_for_item_number_n_name_n_description(input_row),
+# File "/home/ezetap/Documents/work/repos/SAP_upload_excel_creator/sap_upload_excel_creator/core/functions.py", line 103, in do_mapping_for_item_number_n_name_n_description
+#     output_row['Item Description'] = f"<ISSUE>{acquirer + '===' + device_name}</ISSUE>"
+

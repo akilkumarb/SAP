@@ -1,0 +1,202 @@
+[
+  'Common Fields Mapping', 
+  'Data Fields Logic', 
+  'Masters', 
+  'BP Code master', 
+  'TL SPL Code master', 
+  'Sheet Names'
+]
+
+{
+  'KOTAK': 'Data',
+  'AXIS': 'Data',
+  'SBI': 'Data',
+  'HDFC': 'Data',
+  'IDFC': 'Open',
+  'ICICI': 'Data',
+  'YBL': 'Data',
+  'COMPLAINTS': 'Data'
+}
+
+
+# SPL Code Master
+Region	    SPL Code 
+Ahmedabad	    104
+Bangalore	    71
+Bhopal	      111
+Chandigarh	  39
+Chennai	      80
+Delhi NCR	    29
+Hyderabad	    304
+Jaipur	      39
+Kochi	        161
+Kolkata	      16
+Lucknow	      28
+Mumbai	      325
+Pune	        118
+
+# 2 concerns
+# 1. only upload limit is 200mb each with stremalit 
+# 2. Excel limit is 10lakhs rows for xlsx (for xls it is only 65k). Current files have size that is around 3 lakh rows
+ # might need to pull change this to a database
+ # if we change it now, it will be easy. but later this will be dfficult
+# Some of the cells valu is "--", this has to be fixed to np.NaN
+
+uploaded_acquirer vs selcted_acquirer
+uploaded_acquirer is used to name dataframes and this is the main vairable
+but selected_acquier is just for routing functions
+eg. The uploaded_acquirer HDFC AGGR will be routed to use HDFC (selected_acquirer) funtions
+
+
+# For IDFC, Segment column is not found. Need clarification on this as well
+"Reporting Type"
+
+Recvd Date mapping
+KOTAK - Recvd Date
+AXIS - Recvd Date
+# SBI - Request Date   
+# HDFC - Rcvd Date at Ezetap
+# IDFC - Service order Creation Date
+# ICICI - Service order Creation Date
+# YBL -  TID Recevied Date
+# COMPLAINTS - Received date, 
+
+# not updated_acquirer
+complaints_df.Acquirer.str.upper() == selected_acquirer  
+
+data_after_basic_mapping['Acquirer'] = selected_acquirer  
+
+SPL code mapping not updated BIG ISSUE   ---- NOT REGION BUT ZONE  shoudl be used for mapping 
+AXIS_BANK_unique_regions = {  # in current file
+    'Delhi', 'WEST ZONE', 'EAST ZONE', 'NORTH ZONE', 'SOUTH ZONE', # installation
+    'West', 'North', 'South', 'East'  # service
+# } 
+KOTAK_BANK_unique_regions = {'West', 'South', 'North', 'East'}
+
+
+
+data_after_basic_mapping['Status'] = "Open"       # TALL open?
+
+"Device Name__DERIVE": {
+        "KOTAK": "Device Name",
+        "AXIS": "Device Name",
+        "SBI": "Model",
+        "HDFC": "Terminal Flag",
+        "IDFC": "Terminal Model",
+        "ICICI": "Terminal Model",
+        "YBL": "Device Type",
+        "COMPLAINTS": "Device Name"
+    },
+
+# NOT FOUND DEVICE NAMES:
+
+# the folwoing two is added with value of EZ ANDROID A80
+Error: [EZ ANDROID A80 + QR -- AXIS] 'EZ ANDROID A80 + QR'
+Error: [EZ ANDROID A80+QR -- AXIS] 'EZ ANDROID A80+QR'
+# MAKE SURE THIS IS CORRECT
+
+
+Error: [EZ ANDROID A910 -- AXIS] 'EZ ANDROID A910'
+# DONE
+
+Error: [D180 -- AXIS] 'AXIS'
+D180
+D180 INTEGRATED
+# DONE
+
+Apos910 & Apos9102GB   # ?
+
+
+EZ ANDROID A80 - 
+
+EZ ANDROID A910 --
+A910            --
+
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+TO DOs
+
+DONE TO DOs
+# RECREATE COLUMN_VALIDATION_MAPPER SINCE COLUMN WISE MAPPING IS CHANGED
+
+
+# ISSUES NEXT ON JAN 23, 2023
+Dateformat is different in different files:
+
+name     read_by_pandas            libre_calc       MS Excel
+
+KOTAK   = YYYY-MM-DD                23/01/2023
+AXIS    = YYYY-MM-DD                21-Jan-23 
+SBI     = YYYY-MM-DD                21 Jan 23
+HDFC    = YYYY-MM-DD                21/01/2023
+IDFC    = MM/DD/YYYY                21/01/2023
+ICICI   = MM/DD/YYYY                21/01/2023
+YBL     = YYYY-MM-DD                21-Jan-23
+COMPL   = YYYY-MM-DD HH:MM:SS       21/Jan/23
+
+
+# Zone Haryana ? no spl code
+
+Service not found in any -- check complaints 
+
+AXIS, HDFC, KOTAK, SBI -- found only installation
+
+IDFC 
+ICICI
+YBL
+
+
+
+SBI -il device name == "--": what to do here?
+HDFC  device name == "A910,A920" ? which to map?
+IDFC  -- No Pending or Deactive Pending
+ICICI -- No Pending or Deactive Pending
+
+# Search of 'BEWARE'  --> to look later what issue is
+FEW ISSUE TAGGED: 
+- State:
+  <ISSUE>LADAKH</ISSUE>   -- 
+  <ISSUE>Kolkata</ISSUE>  -- 
+  # <ISSUE>JAMMU & KASHMIR</ISSUE>
+  <ISSUE>DADRA AND NAGAR HAVELI</ISSUE>
+  <ISSUE>THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU</ISSUE>
+- Item Code, Item Name, Item Description:
+  <ISSUE>D180 == KOTAK</ISSUE>     # -- what we have Ezetap-D180
+  # solutaion
+KOTAK	Ezetap-D180	D180S - KOTAK	D180 NFC MPOS_KOTAK
+KOTAK        D180 D180S - KOTAK D180 NFC MPOS_KOTAK
+
+
+  <ISSUE>A910 == SBI</ISSUE>       # -- SBI - A910 - not found others are found
+
+  # <ISSUE>EZ ANDROID A910 + QR == AXIS</ISSUE> 
+  <ISSUE>-- == SBI</ISSUE>
+  <ISSUE>A910,A920 == HDFC</ISSUE>  # ========== 2 names together how to manage this ?
+  
+# nan string value is found in Store ID. We need more inspection on this
+
+
+
+aquirer + devcie mode ==> d
+bpcodes - names
+
+?????
+Ticket Type.....?
+- NOT added in validations or column mapping or in functions for mapping
+- please check the final output and confirm
+
+
+
+Status column should be mapped to Final Remarks [ICICI, IDFC]
+# Item Code and Item Mapping [Koppu!] should be mapped to Device Type [ICICI, IDFC]
+Device Name -- Device Type (ICICI, IDFC)
+
+
+
+# NOTES ON MAPPING EXCEL FILE UPLOADS
+
+KEY SHOULD BE DUPLICATED
+IN ONE KEY VALUE A DIFFERENT set of keys will be there. There also no duplication of keys in the current set list
+never change sheet names or column names
+make sure that no sheet is missing while uploading (with exact sheet names and columns)
+Always keep a working mapping excel file as backup. if something goes wrong, upload the backup excel and revert the changes. 
+don't duplicate similar keys. which will reduce standaradization of the data

@@ -1,0 +1,129 @@
+
+
+
+Columns Mapping:  # Just wanted to double-check since the video recording showed otherwise
+  Ticket Type | Call Type | Subject:
+    previous: Installation | Deinstallation | ?
+    new: Status [KOTAK, AXIS, HDFC] | Call Type [SBI, ICICI, IDFC] 
+
+  Sub Type: 
+    previous: New Installation | Terminal Pickup | ?
+    new: Normal/Bizz connect [KOTAK] | Normal,Kdp/Snapbiz [AXIS] | TID Type [HDFC] | Ticket Discription [CM]
+    # Normal + Snapbizz
+
+  Customer:
+    previous: Login [KOTAK] | ?
+    new: Sponsor Bank [KOTAK, AXIS] | Institution [SBI] | Installation Done By [HDFC] | Acquirer [CM]  # no IDFC found
+
+  Contact Person:
+    previous: Login [KOTAK] | ?
+    new: Name [KOTAK, AXIS] | Contactname [SBI] | Customer Name [HDFC, IDFC] | Contact Person [CM]
+
+  Location:
+    previous: City [KOTAK] | ?
+    new: Location[KOTAK, SBI, CM] | City [AXIS, HDFC, ICICI, IDFC]
+
+  State: ? see below indiviudal section -- currently RJ for Rajastan
+
+  Old Device Serial:
+    previous: I thought --> Old Serial Number [KOTAK] | ?
+    new: Serial Number [KOTAK]
+
+  New Serial Number:
+    previous: ? I filled thnking -> Serial Number
+    new: Device Number [CM] | empty [OTHERS]
+  
+  Item Code:
+    previous: from SAP- this column is predefined field in SAP  # A910 - KOTAK  - Sponsor Bank + device Name <-- XLSB 29
+    new: Device Name [KOTAK]
+  
+  Item Name: 
+    previous: from SAP- this column is predefined field in SAP
+    new: Device Name [KOTAK]
+  
+  Status:
+    previous: Open if Status == Pending      # Status in [Pending, Open]? ingane aano uddheshikkunne
+    new:  Status [KOTAK, AXIS, SBI, HDFC, ICICI] | Ticket Status [CM]
+
+  No Of Visits: 0 ?
+
+  SIM Provider:
+    previous: empty
+    new: Network Operator [KOTAK] | empty [OTHERS]
+
+  POA:
+    previous: planned for Status == Pending [KOTAK]
+    new: empty | some other logic here.. Installation --> Planned Deinstallation --> "?"
+
+
+POA Date: Is this same as filter date? System Date Today morning we do the previous day's right? if so today's date or yesterday's date
+
+
+After mapping neeed further mapping: State, Item Code, Item Name etc.. ??
+
+Empty fields everywhere: Item Description, Closure Remarks, NSTP Remarks, SPL Code, No Of Visits, POA
+
+Data Mapping Needed Columns:
+  - BP Code: Business Partener Code from SAP
+
+
+
+Predefined Fields: 
+  set(common_fields_mapping) - set(user_defined_fields): {'SC Entry', 'Store ID'}  # Are all others to to be automated? or all is automated? then why user_defined fields are there?
+
+Priority: M (for ALL except ICICI, IDFC) | High [ICICI, IDFC]  # why two models Single letter or full word? Is this a mistake? Should 'High' be 'H'?
+
+Store ID: placed after one empty line. does it mean that before Store ID there is one more field?
+
+State: map first from input sheets then? short names? 2 letter Abbrev?
+
+Fill NA: -- [SC Entry, Service Ticket Number] | empty (np.NaN)  # better if we follow one model
+
+
+
+Questions:
+  - What is the difference between 2 KOTAK master files ie., (29) & (JAN)?
+  - How many inputs for KOTAK | AXIS |||.. ? One sheet each for ['KOTAK', 'AXIS', 'SBI', 'HDFC', 'ICICI', 'IDFC']?
+  - Break-Fix sheet will be used across all Banks right? - filter by BANK --> fiter by Open Tickets ---> then aggregate?
+
+Requests:
+  - Please send other banks also for the same day or month
+  - the data mappings
+
+
+Aggregation Process Logic:
+  Step 1 - Data filter: 
+    - (Status == Pending) --> (Recvd Date == SELECTED_DATE) ['KOTAK', 'AXIS', 'SBI', 'HDFC', 'ICICI', 'IDFC']  # Date col same? Recvd Date in all?
+    - (Bank == SELECTED BANK) --> (Ticket Status==Open) (Recvd Date <= SELECTED_DATE) ["Complaints Master"]  # Date col same? Recvd Date in all?
+  Step 2 - Aggregate:
+    - Column mapping
+    - Data Mapping
+
+UI:
+  Title: ?
+  Input Fields:
+    Date Input Field (prefilled with System Current Date): for selecting date for filter [OPTIONAL]  # ISSUE, this server can be hosted anywhere in the world since using streamlit, So system date might differ. 
+    File Input for Excel sheets:
+      - {BANK} master (eg: KOTAK MASTER, ICICI MASTER etc.): File Upload Input Field [MANDATORY]
+      - Complaints Master: Breakfix file with all BANKS data [MANDATORY]
+      - Data Mapper files:
+        - SAP data dump (prefilled with previously uploaded data mapping files) [OPTIONAL]
+        - State names and short 2 letter abbreviations (prefilled with previously uploaded data mapping files) [OPTIONAL]
+        - etc. (prefilled with previously uploaded data mapping files) [OPTIONAL]
+    Upload Button:
+      - triggers Data filter and Aggregate functions in <Aggregation Process Logic>
+      - Output creating:
+        Options:      # 1 x 18    |    6 x 3    | 3 x 6   --> workbooks x sheets
+        - 1. Creates 1 file with 18 sheets: # ['KOTAK', 'AXIS', 'SBI', 'HDFC', 'ICICI', 'IDFC'] * [INSTALLATION, DEINSTALLATION, BREAK-FIX] = 6 * 3 = 18 sheets in one excel file
+          - Creates a single output excel workbook with the following 18 sheets
+          - For Example, 6 Banks * {BANK} INSTALLATION, {BANK} DEINSTALLATION , {BANK} BREAK-FIX
+        - 2. Creates 6 files with 3 sheets in each files:
+          - Each file represents eacg bank # 'KOTAK', 'AXIS', 'SBI', 'HDFC', 'ICICI', 'IDFC'
+          - Each sheet repesents the type of ticket # INSTALLATION, DEINSTALLATION, BREAK-FIX
+        - 3. Creates 3 files with 6 sheets:
+          - Each file repesents the type of ticket # INSTALLATION, DEINSTALLATION, BREAK-FIX
+          - Each sheet represents each bank # 'KOTAK', 'AXIS', 'SBI', 'HDFC', 'ICICI', 'IDFC'
+
+  Other Buttons:
+    Aggregate & Convert
+  

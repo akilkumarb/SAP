@@ -1,0 +1,31 @@
+
+{
+    "bp_codes_n_names" : {
+        "json_file": "bp_codes_n_names.json",
+        "sheet_name": "bp_codes_n_names"
+    },
+    "acquirer_n_device_model_to_item_no_n_item_desciption": {
+        "json_file": "acquirer_n_device_model_to_item_no_n_item_desciption.json",
+        "sheet_name": "bank_device_2_item_no_n_desc"
+    },
+    "deactivation_date_column_mapping": {
+        "json_file": "deactivation_date_column_mapping.json",
+        "sheet_name": "deactivation_date_col"
+    },
+    "region_to_spl_codes": {
+        "json_file": "region_to_spl_codes.json",
+        "sheet_name": "spl_code"
+    },
+    "sheet_names": {
+        "json_file": "sheet_names.json",
+        "sheet_name": "sheet_names"
+    },
+    "statenames_n_short_codes": {
+        "json_file": "statenames_n_short_codes.json",
+        "sheet_name": "state_n_short_code"
+    },
+    "status_columns": {
+        "json_file": "status_columns.json",
+        "sheet_name": "status_columns"
+    }
+}

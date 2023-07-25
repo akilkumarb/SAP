@@ -1,0 +1,126 @@
+inputs:
+  - KOTAK MASTER FILE (JAN).xlsx: prepared by setup team?
+    - master input file 
+    - sheet1 is important
+    - sheet2 is a summary tab
+  - kotak_master (29).xlsb: 
+    - installation_file: created by the control apps team which has tat local outstation categorization or status
+    - input sheet name: Data
+  - Complaints Master File:Master Compliants (8).xlsx:
+    - 
+
+Concerns: 
+        - Pending of previous sheets be taken to the new report? or what? previous once if status is still pending..??? -- System should be taken for now
+          We will prefit the text input box with today's date but you can edit it if needed. 
+
+          Today's all and previous all pending ones? -- as the data?
+
+        - bank to BP Code is need as mapping file -                                ----------
+        - Assingment of username for each tickets? people on leave -- manually? TL's ID?  -- they will discuss and tell
+
+        - Mapping of Column bindings, Excel sheet of mapping of codes
+
+        - breakfix -- take to directly live from Fresh Desk -- API might be needed.
+
+output:
+  - Upload file Format of SAP.xlsx: Instllation,  De Installation  & BreakFix (breakfix based on complaints raised as tickets in FRESH DESK)
+    - Columns:
+      - SC Entry: not filled by us
+      - Service Ticket Number: 
+        - from Complaints Master input file -- recived from FRESH-DESK tool
+        - No value will be there for Installation and De-installation
+      - Transaction Type: unque value A - stands for add      A or creation of device (?? installation?)
+  # - Break-Fix: input from Complaints master dump file also -  See Service Ticket Number of Upload file format of SAP
+
+      - Reporting Type  (=Segment <-- 29 XLSB):  # but for some we have generate these type name ----------
+        -  Mapping file needed (they can modify and update it but excel aggregation should not break)
+      - Priority  --? M in all ???
+      - Acquirer  -- from bank nam filed
+      - Ticket Type  = Installation for pending and Deinstallation for Deactive-pending
+      - Call Type = Installation for pending and Deinstallation for Deactive-pending
+      - Subject = Installation for pending and Deinstallation for Deactive-pending
+      - Sub Type = New Installation for pending and Terminal Pickup for Deactive-pending
+      - BP Code: Business partner code is created in SAP for each bank   ------------- 
+
+      
+      # fill he MID, TID, MErchant Name, city..etc from KOtak 29 XLSB - Data Tab
+      - Pincode  (=)
+      - State (=ShortCode(Master of state codes data sheet - State Shortcoes.xlsx))  ---------------------
+      - Zone (=New Team  <-- 29 XLSB)
+      - Region (=Region  <-- 29 XLSB)
+      - Phone No
+      - Merchant Phone No
+      - User ID
+      - MID   (=MID <-- 29 XLSB)   -- # beware it starts with zero. so should be string.. not the other
+      - TID   (=TID <-- 29 XLSB)   -- # beware it starts with zero. so should be string.. not the other
+      - Old Device Serial: 
+        - can be empty when we do not know them since installtion ticket is raised only but not assigned any device. so far
+        - for de-installation and break-fix there will be Serial number
+      - New Serial Number: 
+
+      - Item Code        - from SAP- this column is predefined field in SAP  # A910 - KOTAK  - Sponsor Bank + device Name <-- XLSB 29
+      - Item Name        - from SAP- this column is predefined field in SAP  # A910 - KOTAK same as above
+      - Item Description - from SAP- this column is predefined field in SAP  # A910 - A910-DAW... Kotak -- 
+      # above three are already defined SCM module of SAP system  -- GET THE DUMP OF THAT TO DEFINE THE ABOVE THINGS   ----------
+      
+      - State Name ?????? # Haryana  --- NOT FOUND IN THE SENT EXCEL OUTPUT FORMAT FILE???
+      - Status = "Open" for pending I hope?      ????  - from creating a ticket, it is always "Open"
+      - Closure Remarks
+      - NSTP Remarks
+
+      - SPL Code:  # like employee code  here each user gets a code User Code in understanding
+          - for only all mobile "users" we have --- Created User seen SAP 
+          - Taken from region wise (State or Pincode) -- ??? Each or Multiple pin code will have one SPL CODE  - MAPPING NEEDED OR LOGIC ---------
+
+      - No Of Visits: int (=0)
+      - SIM Provider
+      - SIM No
+      - SIM No Old: can be empty for cases like 
+      - POA (="Planned")
+      - POA Date: datetime.now().date() in strfrmt 09-01-2023  - system date
+
+
+-- instzllation and de-installation data will come from the 29 master XLSB file
+
+Installation:
+  - Selection of Data from Aggregation: 
+    - KOTAK 29 XLSB file > Data tab > status==Pending,  Filter by Recvd Date [eg- Jan 11, 2023]
+  - create installation ticket for a CAFE for example:
+    - Merchant Name (CAFE name in this context)
+      - Merchant Name (= Merchant Name --> output format file)
+    - City state and pin code also is taken from here. from the currepsonding merchant name 
+    - contact person's name and login id from columns 
+      - Name (= Customer = Contact Person --> output format file)
+      - Login (= Phone No = Merchant Phone = User ID --> output format file)
+    - MID, TID:
+      MID (= MID),
+      TID (= TID)
+
+    - ? (Item Code, Item Name, Item Descitpion --> output format file )  --? FROM SAP
+
+De-Installation:
+  - Data: 
+    - same as input data of Installation
+    - but status == "Deactive Pending"
+
+
+Break-Fix:
+  - Data:
+    - From complaints master file > filter Ticket Status == "Open" Till Today...
+    - filter by bank : each bank 
+    - Complaint Number (=Service Ticket Number --> output-format file)
+
+  
+Break-Fix:
+
+SAP:
+  defintions:
+    -  A for add
+    - ?
+
+
+- Once, output file is uploaded, we get successful Service ticket number in the SAP
+
+
+Notes:
+  - IN THE MAIL: Not mentined (though Anand told to do it) which columns from these these files have to taken

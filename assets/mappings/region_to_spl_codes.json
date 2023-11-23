@@ -1,43 +1,43 @@
 {
     "AHMEDABAD": {
         "Region": "Ahmedabad",
-        "SPL Code": 104
+        "SPL Code": 623
     },
     "BANGALORE": {
         "Region": "Bangalore",
-        "SPL Code": 71
+        "SPL Code": 625
     },
     "BHOPAL": {
         "Region": "Bhopal",
-        "SPL Code": 111
+        "SPL Code": 626
     },
     "CHANDIGARH": {
         "Region": "Chandigarh",
-        "SPL Code": 39
+        "SPL Code": 615
     },
     "CHENNAI": {
         "Region": "Chennai",
-        "SPL Code": 80
+        "SPL Code": 622
     },
     "DELHI NCR": {
         "Region": "Delhi NCR",
-        "SPL Code": 29
+        "SPL Code": 613
     },
     "HYDERABAD": {
         "Region": "Hyderabad",
-        "SPL Code": 304
+        "SPL Code": 617
     },
     "JAIPUR": {
         "Region": "Jaipur",
-        "SPL Code": 39
+        "SPL Code": 770
     },
     "KOCHI": {
         "Region": "Kochi",
-        "SPL Code": 161
+        "SPL Code": 621
     },
     "KOLKATA": {
         "Region": "Kolkata",
-        "SPL Code": 16
+        "SPL Code": 864
     },
     "LUCKNOW": {
         "Region": "Lucknow",
@@ -45,26 +45,26 @@
     },
     "MUMBAI": {
         "Region": "Mumbai",
-        "SPL Code": 325
+        "SPL Code": 112
     },
     "PUNE": {
         "Region": "Pune",
-        "SPL Code": 118
+        "SPL Code": 641
     },
     "HARYANA": {
         "Region": "Haryana",
-        "SPL Code": 39
+        "SPL Code": 784
     },
     "BHUWANESHWAR": {
         "Region": "Bhuwaneshwar",
-        "SPL Code": 16
+        "SPL Code": 624
     },
     "GUWAHATI": {
         "Region": "Guwahati",
-        "SPL Code": 552
+        "SPL Code": 614
     },
     "PATNA": {
         "Region": "Patna",
-        "SPL Code": 553
+        "SPL Code": 640
     }
 }

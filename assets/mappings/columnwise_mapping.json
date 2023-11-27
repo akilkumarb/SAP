@@ -171,12 +171,12 @@
     "User ID": {
         "KOTAK": "User ID",
         "AXIS": "User ID",
-        "SBI": "Mobile number",
-        "HDFC": "Login ID",
+        "SBI": "User ID",
+        "HDFC": "User ID",
         "ICICI": "Login ID",
         "IDFC": "Login",
-        "YBL": "Login Id",
-        "COMPLAINTS": "Contact Number"
+        "YBL": "User ID",
+        "COMPLAINTS": "Ezetap Login ID"
     },
     "MID": {
         "KOTAK": "MID",

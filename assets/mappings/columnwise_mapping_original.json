@@ -60,7 +60,7 @@
         "HDFC": "acquirer code to be HDFC for both normal and Aggregator",
         "ICICI": "ICICI",
         "IDFC": "IDFC",
-        "YBL": "acquirer to be as per file name for.\n\nex: if file name is kotak_master then acquirer to be KOTAK in upper case",
+        "YBL": "YES",
         "COMPLAINTS": "please refer to the \"Acquirer\" column in the complaints master file"
     },
     "Ticket Type": {

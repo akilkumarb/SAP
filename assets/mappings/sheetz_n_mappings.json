@@ -219,7 +219,7 @@
         "SPL Code": "Region wise TL SPL code to be added",
         "Reporting Type": "Segment",
         "Priority": "Priority to be set as \"M\"",
-        "Acquirer": "acquirer to be as per file name for.\n\nex: if file name is kotak_master then acquirer to be KOTAK in upper case",
+        "Acquirer": "YES",
         "Ticket Type": "Status",
         "Call Type": "Status",
         "Subject": "Status",

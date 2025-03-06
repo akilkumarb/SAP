@@ -443,7 +443,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "numpy"
-version = "1.24.1"
+version = "1.25.0"
 description = "Fundamental package for array computing in Python"
 category = "main"
 optional = false

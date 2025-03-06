@@ -8,7 +8,7 @@ packages = [{include = "sap_upload_excel_creator"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.9.7 || >3.9.7,<4.0" # "^3.8"
-numpy = "^1.24.1"
+numpy = "^1.25.0"
 pandas = "^1.5.2"
 openpyxl = "^3.0.10"
 pyxlsb = "^1.0.10"
